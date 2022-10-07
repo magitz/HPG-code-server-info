@@ -78,5 +78,6 @@ Now that VSCode Server is setup, it should be relatively easy to start. For the 
    * Export the `XDG_RUNTIME_DIR` to set temp directory (otherwise it tries to use `/run/user/`, which you can't be written to!): `export XDG_RUNTIME_DIR=${SLURM_TMPDIR}`
 
 1. Start VSCode server: `code-server`
+     This can all be done with this line: `module load jupyter tensorflow/2.7.0; export XDG_RUNTIME_DIR=${SLURM_TMPDIR}; code-server`
 1. Connect to the URL provided in your browser.
 1. Code away!
